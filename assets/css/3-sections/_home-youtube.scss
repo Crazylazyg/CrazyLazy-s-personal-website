@@ -1,0 +1,52 @@
+section.youtube {
+  overflow: hidden;
+  color: #000;
+  .home-cta {
+    color: white;
+  }
+  .col-1 {
+    position: relative;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .flex-video {
+    box-shadow: 4px 4px 48px 2px rgba(0,0,0,0.4);
+    transform: scale(1.4);
+    @media (max-width: 900px) {
+      transform: scale(1);
+    }
+  }
+  .outdented {
+    line-height: 1.5;
+  }
+  .pic-strip {
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 100px);
+    top: 0;
+    margin: -50px 0;
+    background-image: url(/assets/img/copy.png);
+    background-position: center 0;
+    background-repeat: repeat-y;
+    background-size: 100%;
+
+  }
+}
+@media (max-width: 640px) {
+  section.youtube {
+    .col-1 {
+      display: block;
+      width: auto;
+      height: auto;
+      padding: 30px 20px;
+    }
+    .pic-strip {
+      display: none;
+    }
+    .outdented {
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+mixin nav-content()
+  ul
+    li: a(href="#about") About
+    li: a(href="#about") Serviec
+    li: a(href="#about") Design
+    li: a(href="#about") Notes
+    li: a(href="#about") Contact
+
+.mobile-nav
+  //- .is-open
+  +nav-content()
+
+header
+  .header-postion
+    h1.logo CrazyLazy
+
+    nav.site-nav
+      +nav-content()
+
+    a(href="mailto:crazylazy007@gmail.com").emailLink +email me
+
+    .mobile-nav-toggle: span
