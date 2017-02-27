@@ -692,7 +692,8 @@ section.about {
 
 section.youtube {
   overflow: hidden;
-  color: #000; }
+  color: #000;
+  background-color: white; }
   section.youtube .home-cta {
     color: white; }
   section.youtube .col-1 {
