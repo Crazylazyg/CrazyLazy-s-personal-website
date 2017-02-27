@@ -567,6 +567,7 @@ header {
         justify-content: space-between; }
 
 .logo {
+  font-size: 18px;
   color: rgba(255, 255, 255, 0);
   background: url(/assets/img/myLogo.svg) no-repeat center;
   background-size: contain;
@@ -822,13 +823,77 @@ section.mentoring {
       font-size: 18px;
       line-height: 1.6; } }
 
+section.articles {
+  background-image: url(/assets/img/acBg.jpg);
+  background-size: cover;
+  background-position: center; }
+  section.articles .col-1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
+  section.articles .home-cta {
+    color: white;
+    background: #000; }
+  section.articles .home-lead {
+    color: white; }
+  section.articles .article-warp {
+    margin: -50px 0; }
+    section.articles .article-warp:after {
+      content: "";
+      display: table;
+      clear: both; }
+  section.articles .articles-thumb {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+    float: left;
+    position: relative;
+    overflow: hidden; }
+    section.articles .articles-thumb:after {
+      content: '';
+      display: block;
+      padding-bottom: 100%; }
+    section.articles .articles-thumb .articles-meta {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.7);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: #000;
+      padding: 10px;
+      -webkit-transform: translate(0%, 100%) scale(0.5);
+              transform: translate(0%, 100%) scale(0.5);
+      opacity: 0;
+      transition: all 0.2s ease-in-out; }
+      section.articles .articles-thumb .articles-meta .mane {
+        font-size: 18px; }
+      section.articles .articles-thumb .articles-meta .date {
+        font-style: italic; }
+    section.articles .articles-thumb:hover .articles-meta {
+      -webkit-transform: translate(0%, 0%) scale(1);
+              transform: translate(0%, 0%) scale(1);
+      opacity: 1; }
+
+@media (max-width: 640px) {
+  section.articles .article-warp {
+    margin: -20px 0; }
+  section.articles .desc-wrap {
+    margin-top: 60px; }
+  section.articles .col-1 {
+    display: block; } }
+
+body {
+  background-color: #e0ecf9; }
+
 iframe {
   border: none; }
 
 .home-wrap {
   display: -ms-flexbox;
-  display: flex;
-  min-height: 100vh; }
+  display: flex; }
   .home-wrap .home-sections {
     -ms-flex: 1;
         flex: 1; }
@@ -871,8 +936,7 @@ section {
   background-color: pink; }
 
 .col-50 {
-  width: 50%;
-  background: lightyellow; }
+  width: 50%; }
 
 @media (max-width: 640px) {
   .home-sections, .flex {

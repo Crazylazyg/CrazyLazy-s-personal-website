@@ -1,9 +1,12 @@
+body {
+  background-color: #e0ecf9;
+}
+
 iframe {
   border: none;
 }
 .home-wrap {
   display: flex;
-  min-height: 100vh;
   .home-sections {
     flex: 1;
   }
@@ -48,7 +51,7 @@ section {
 }
 .col-50 {
   width: 50%;
-  background: lightyellow;
+  // background: lightyellow;
 }
 
 @media (max-width: 640px) {
