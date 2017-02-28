@@ -1,28 +1,15 @@
-mixin thumb
-  a(herf="" style="background-image: url(http://fillmurray.com/230/500)").articles-thumb
-    .articles-meta
-      .name CrazyLazy
-      .date Dec 10, 2016
-
 section.articles
   .flex.flex-center
     .col-50
       .article-warp
-        +thumb
-        +thumb
-        +thumb
-        +thumb
-        +thumb
-        +thumb
-        +thumb
-        +thumb
-        +thumb
-        +thumb
-        +thumb
-        +thumb
-
+        |{% for post in site.posts limit: 12 %}
+        a(href="{{post.url}}" style="background-image: url(/assets/img/posts/thumbnail/{{post.thumbnail}})").articles-thumb
+          .articles-meta
+            .name {{post.title}}
+            .date {{post.date | date: "%a, %b %d, %Y"}}
+        |{% endfor %}
     .col-50.flex.flex-center.order-first
       .col-1
         .desc-wrap
-          p.home-lead.outdented … You can lead a horse to water, but you can't make it drink …
-          a(href="https://www.youtube.com/user/DevTipsForDesigners").home-cta DevTips
+          p.home-lead.outdented … Photoing and designing and more …
+          a(href="https://www.youtube.com/user/DevTipsForDesigners").home-cta Personal Portfolio
