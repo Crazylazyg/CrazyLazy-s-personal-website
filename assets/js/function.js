@@ -1,7 +1,19 @@
 $(function(){
   mentoringBubbleClick();
   setInterval(function() {articleTade()}, 4200);
+  designBgStuff();
 });
+
+function designBgStuff() {
+  //.design-img hover
+  $('.design-img').hover(function() {
+    //find a color > apply the color to the bg
+    $(this).parent().parent().css('background-color', $(this).data('color'));
+  }, function() {
+    //of revert the color
+    $(this).parent().parent().css('background-color', $(this).parent().parent().data('color-orig'));
+  });
+}
 
 function articleTade() {
   var randNum = Math.floor(Math.random() * $('.articles-thumb').length) + 1;
