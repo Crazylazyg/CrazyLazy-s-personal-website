@@ -1,0 +1,17 @@
+section.vine {
+  background-image: url(/assets/img/vineBg.jpg);
+  background-size: cover;
+  background-position: center;
+  .home-lead {
+    color: #fff;
+  }
+  .home-cta {
+    color: #4b9e2c;
+    background-color: #fff;
+  }
+  .description {
+    display: flex;
+    align-items: center;
+    
+  }
+}

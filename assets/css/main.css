@@ -512,12 +512,6 @@ fieldset {
   h3 {
     padding: 50px 0 50px; } }
 
-section:nth-child(odd) {
-  background: #F6F6F8;
-  padding-bottom: 100px; }
-  section:nth-child(odd) h3 {
-    color: #e6e6e6; }
-
 .home-cta {
   font-size: 22px;
   display: block;
@@ -747,6 +741,7 @@ section.mentoring {
     color: #000;
     background-color: white; }
   section.mentoring .home-lead {
+    color: #fff;
     margin-top: 250px; }
   section.mentoring .faces {
     list-style: none;
@@ -819,7 +814,6 @@ section.mentoring {
         section.mentoring .faces .face.back-btn {
           display: inline-block; }
     section.mentoring .home-lead {
-      color: #000;
       font-size: 18px;
       line-height: 1.6; } }
 
@@ -934,6 +928,21 @@ section.articles {
     margin-top: 60px; }
   section.articles .col-1 {
     display: block; } }
+
+section.vine {
+  background-image: url(/assets/img/vineBg.jpg);
+  background-size: cover;
+  background-position: center; }
+  section.vine .home-lead {
+    color: #fff; }
+  section.vine .home-cta {
+    color: #4b9e2c;
+    background-color: #fff; }
+  section.vine .description {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
 
 body {
   background-color: #BD5259; }
