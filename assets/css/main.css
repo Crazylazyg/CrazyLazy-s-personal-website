@@ -944,8 +944,40 @@ section.vine {
     -ms-flex-align: center;
         align-items: center; }
 
+section.design {
+  padding: 0; }
+  section.design .dribbble, section.design .behance {
+    padding: 50px 0;
+    background-color: #ea4c89; }
+    section.design .dribbble .home-cta, section.design .behance .home-cta {
+      background-color: #fff;
+      color: #ea4c89; }
+  section.design .behance {
+    background-color: #1769ff; }
+    section.design .behance .home-cta {
+      color: #1769ff; }
+  section.design .home-lead {
+    color: #fff;
+    text-align: center; }
+  section.design .design-img {
+    display: block;
+    float: left;
+    width: calc(50% - 14px);
+    border: 2px solid white;
+    box-shadow: 2px 2px 15px rbga(0, 0, 0, 0.2);
+    margin: 5px; }
+    section.design .design-img img {
+      max-width: 100%;
+      display: block; }
+  section.design .cf {
+    clear: both;
+    margin-bottom: 20px; }
+
 body {
   background-color: #BD5259; }
+
+body section {
+  background-color: #fff; }
 
 iframe {
   border: none; }
