@@ -2,6 +2,7 @@ $(function(){
   mentoringBubbleClick();
   setInterval(function() {articleTade()}, 4200);
   designBgStuff();
+  mobileNavClick();
 });
 
 function designBgStuff() {
@@ -46,6 +47,12 @@ function mentoringBubbleClick() {
 //get the distance of the face from its parent
 // move the whole container u up 115px + the  count
 // add bubble-open class to the face, pop the balloon
+}
+
+function mobileNavClick() {
+  $('.mobile-nav-toggle').on('click', function(){
+    $('.mobile-nav').toggleClass('is-open');
+  });
 }
 
 $(window).scroll(function(){

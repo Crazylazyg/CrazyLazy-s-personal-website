@@ -621,11 +621,14 @@ header {
             transform: rotate(-45deg); }
 
 .mobile-nav {
-  display: none;
+  display: block;
+  opacity: 0;
+  margin-top: -300px;
   width: 100%;
   position: absolute;
   background-color: white;
-  padding: 20px 0 10px 0; }
+  padding: 20px 0 10px 0;
+  transition: all 0.6s ease-in-out; }
   .mobile-nav ul {
     list-style: none;
     padding: 0;
@@ -658,7 +661,8 @@ header {
     display: -ms-flexbox;
     display: flex; }
   .mobile-nav.is-open {
-    display: block; } }
+    margin-top: 0;
+    opacity: 1; } }
 
 section.about {
   background-image: url(/assets/img/Hero.jpg);
@@ -977,6 +981,44 @@ section.design {
   section.design .cf {
     clear: both;
     margin-bottom: 20px; }
+
+section.mail .col-1 {
+  margin: 0;
+  padding-left: 30px;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.8; }
+  section.mail .col-1:first-child {
+    padding-left: 0;
+    padding-right: 30px;
+    text-align: right;
+    border-right: 2px #000 solid; }
+  section.mail .col-1 a {
+    color: #000;
+    text-decoration: underline; }
+  section.mail .col-1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  section.mail .col-1 p {
+    margin: 0; }
+
+footer.home-footer a {
+  width: 100%;
+  line-height: 6;
+  display: block;
+  color: white;
+  background-color: #e24040;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 300;
+  transition: all 0.3s ease-in-out; }
+  footer.home-footer a:hover {
+    background-color: #d82121; }
+
+@media (max-width: 640px) {
+  footer.home-footer a {
+    font-size: 1em; } }
 
 body {
   background-color: #BD5259; }

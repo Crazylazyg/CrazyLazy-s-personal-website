@@ -86,11 +86,14 @@ header {
 
 //mobile-nav
 .mobile-nav {
-  display: none;
+  display: block;
+  opacity: 0;
+  margin-top: -300px;
   width: 100%;
   position: absolute;
   background-color: white;
   padding: 20px 0 10px 0;
+  transition: all 0.6s ease-in-out;
   ul {
     list-style: none;
     padding: 0;
@@ -128,6 +131,7 @@ header {
     display: flex;
   }
   .mobile-nav.is-open {
-    display: block;
+    margin-top: 0;
+    opacity: 1;
   }
 }
