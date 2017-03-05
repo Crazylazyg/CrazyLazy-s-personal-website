@@ -607,16 +607,16 @@ header {
     top: 10px; }
   .mobile-nav-toggle span:after {
     bottom: 12px; }
-  .mobile-nav-toggle:hover span {
+  .mobile-nav-toggle.opend span {
     background: transparent; }
-  .mobile-nav-toggle:hover span:before,
-  .mobile-nav-toggle:hover span:after {
+  .mobile-nav-toggle.opend span:before,
+  .mobile-nav-toggle.opend span:after {
     -webkit-transform-origin: center;
             transform-origin: center;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     top: 0; }
-  .mobile-nav-toggle:hover span:after {
+  .mobile-nav-toggle.opend span:after {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg); }
 
@@ -667,15 +667,30 @@ header {
 section.about {
   background-image: url(/assets/img/Hero.jpg);
   background-position: center top;
-  background-size: cover; }
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  z-index: -2; }
   section.about h2 {
     font-size: 54px;
-    color: #2F2A25;
+    color: #fff;
     margin-top: 0;
     margin-left: -60px;
     text-align: left; }
   section.about .home-lead {
-    color: #2F2A25; }
+    color: #fff; }
+  section.about video {
+    position: absolute;
+    top: 48%;
+    left: 56%;
+    z-index: -1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    min-width: 50%;
+    min-height: 50%;
+    width: auto;
+    height: auto;
+    background-color: transparent; }
 
 @media (max-width: 640px) {
   section.about h2 {
@@ -687,7 +702,10 @@ section.about {
   section.about .home-lead {
     font-size: 18px;
     margin: 0 10px;
-    color: white; } }
+    color: white; }
+  section.about video {
+    top: 60%;
+    left: 110%; } }
 
 section.youtube {
   overflow: hidden;

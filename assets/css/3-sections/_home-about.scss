@@ -2,16 +2,30 @@ section.about {
   background-image: url(/assets/img/Hero.jpg);
   background-position: center top;
   background-size: cover;
-
+  position: relative;
+  overflow: hidden;
+  z-index: -2;
   h2 {
     font-size: 54px;
-    color: #2F2A25;
+    color: #fff;
     margin-top: 0;
     margin-left: -60px;
     text-align: left;
   }
   .home-lead {
-    color: #2F2A25;
+    color: #fff;
+  }
+  video {
+    position: absolute;
+    top: 48%;
+    left: 56%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    min-width: 50%;
+    min-height: 50%;
+    width: auto;
+    height: auto;
+    background-color: transparent;
   }
 }
 
@@ -30,6 +44,9 @@ section.about {
       margin: 0 10px;
       color: white;
     }
+    video {
+      top: 60%;
+      left: 110%;
+    }
   }
-
 }

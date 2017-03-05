@@ -70,16 +70,16 @@ header {
     bottom: 12px;
   }
 
-  &:hover span {
+  &.opend span {
     background: transparent;
   }
-  &:hover span:before,
-  &:hover span:after {
+  &.opend span:before,
+  &.opend span:after {
     transform-origin: center;
     transform: rotate(45deg);
     top: 0;
   }
-  &:hover span:after {
+  &.opend span:after {
     transform: rotate(-45deg);
   }
 }

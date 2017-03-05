@@ -2,8 +2,52 @@ $(function(){
   mentoringBubbleClick();
   setInterval(function() {articleTade()}, 4200);
   designBgStuff();
-  mobileNavClick();
 });
+
+//code
+(function($){
+  "use strict"
+  var $mobileNavBtn = $('.mobile-nav-toggle'),
+      $blackATags = $('a[href^="#"]'),
+      $body = $('html, body'),
+      settings = {
+        duration: 800
+      };
+
+
+  function onBtnClick (e) {
+    var $this = $(this),
+        $selectors = $('.mobile-nav');
+
+    $this.toggleClass('opend');
+    $selectors.toggleClass('is-open');
+  }
+
+  function onBlackAClick (e) {
+    var $this = $(this),
+        href = $this.attr('href'),
+        $target = $(href);
+
+    if ($target.length > 0) {
+      event.preventDefault();
+      $body.animate({
+        scrollTop: $target.offset().top
+      }, settings.duration);
+    }
+  }
+
+  $(document).ready(function () {
+    $mobileNavBtn.on('click', onBtnClick);
+    $blackATags.on('click', onBlackAClick);
+  });
+
+})(jQuery);
+// function mobileNavClick() {
+//   $('.mobile-nav-toggle').on('click', function(){
+//     $('.mobile-nav-toggle').toggleClass('opend');
+//     $('.mobile-nav').toggleClass('is-open');
+//   });
+// }
 
 function designBgStuff() {
   //.design-img hover
@@ -49,11 +93,6 @@ function mentoringBubbleClick() {
 // add bubble-open class to the face, pop the balloon
 }
 
-function mobileNavClick() {
-  $('.mobile-nav-toggle').on('click', function(){
-    $('.mobile-nav').toggleClass('is-open');
-  });
-}
 
 $(window).scroll(function(){
   youtubeVidscroll();
