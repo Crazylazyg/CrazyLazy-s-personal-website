@@ -1,0 +1,17 @@
+mixin work(href="work.html", src="https://blind.com/wp-content/uploads/cache/2016/06/Xbox_EDM_Console_001/491271275.jpg")
+  .pic
+    a(href=`${href}` style=`background-image:url(${src})`)
+      .title <span>类型</span><br>标题
+      
+
+.menus
+  ul
+    li.active All
+    li Brand
+    li UX
+    li Producet
+.collection
+  +work("/")
+  +work()
+  +work()
+  +work()

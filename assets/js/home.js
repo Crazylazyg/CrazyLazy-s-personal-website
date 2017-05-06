@@ -1,0 +1,3 @@
+$(function(){
+  $('.home').addClass('active')
+});

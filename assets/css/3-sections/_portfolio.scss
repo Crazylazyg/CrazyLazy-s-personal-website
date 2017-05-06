@@ -1,0 +1,109 @@
+body {
+  background-color: white;
+}
+.menus {
+  width: 100%;
+  padding: 0;
+  ul {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    color: #D8DDE6;
+    list-style: none;
+    text-align: center;
+    flex-grow: 1;
+    font-size: 32px;
+    padding: 80px 72px 32px 72px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &.active,&:hover  {
+      color: #3f3f3f;
+    }
+    &.active:after,&:hover:after {
+      width: 100%;
+    }
+    &:after {
+      content: '';
+      display: block;
+      height: 4px;
+      width: 0;
+      background-color: #D8DDE6;
+      transition: all .3s;
+    }
+  }
+}
+.collection {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  .pic {
+    width: 50%;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    a {
+      width: 100%;
+      // background-image: url('/assets/img/posts/thumbnail/Unknown-12.jpeg');
+      background-size: 100%;
+      background-position: center;
+      transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      color: white;
+      display: flex;/* align horizontal */
+      align-items: center;
+      background-color: rgba(0,12,24,0.2);
+      &:hover {
+        background-size: 110%;
+      }
+      &:hover .title{
+        opacity: 1;
+        text-shadow: 0 4px 72px rgba(0,24,64,0.8);
+      }
+      &:before {
+        content: "";
+        display: block;
+        padding: 0 0 56.25% 0;
+        background-color: rgba(0,12,24,0.2);
+      }
+      // &:after {
+      //   display: block;
+      //   background-color: rgba(0,12,24,0.2);
+      // }
+
+      .title {
+        span {
+          font-size: 18px;
+        }
+        display: flex;
+        align-items: center;
+        align-self: center;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 0;
+        width: 100%;
+        height: 28.12vw;
+        transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        font-size: 32px;
+        text-align: center;
+        line-height: 66%;
+        margin: 0;
+        color: white;
+        background-color: rgba(0,6,12,0.4);
+        // &:after {
+        //   content: "";
+        //   position: absolute;
+        //   display: inline-block;
+        //   width: 100%;
+        //   height: 100%;
+        //   background-color: rgba(0,12,24,0.2);
+        // }
+      }
+
+
+
+
+    }
+  }
+}

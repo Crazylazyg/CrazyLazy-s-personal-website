@@ -1,0 +1,12 @@
+mixin nav-content()
+  ul
+    li: a(class="home" href="/") Home
+    li: a(class="serviec" href="/service.html") Serviec
+    li: a(class="portfolio" href="/portfolio.html") Portfolio
+nav
+  a#logo
+  +nav-content()
+  p Contact
+   a(href="https://www.facebook.com/crazylazyg" class="fa fa-facebook nav-icon" aria-hidden="true")
+   a(href="https://twitter.com/CrazyLazyg" class="fa fa-twitter nav-icon" aria-hidden="true")
+   a(href="mailto:crazylazy007@gmail.com" class="fa fa-envelope nav-icon" aria-hidden="true")

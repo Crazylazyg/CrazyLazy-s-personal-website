@@ -1,0 +1,30 @@
+.work{
+  width: 100%;
+  z-index: -1;
+  .hero {
+    width: 100%;
+    height: 66vh;
+    display: flex;
+    align-items: center;
+    video {
+      height: 100%;
+      margin: auto;
+      z-index: -1;
+    }
+  }
+  .main-text{
+    width: 66%;
+    margin: auto;
+    text-align: center;
+    padding: 60px 0 80px 0;
+    clear: both;
+  }
+  .pics {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .pic {
+      width: 50%;
+    }
+  }
+}
