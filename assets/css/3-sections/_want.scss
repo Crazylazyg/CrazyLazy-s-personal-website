@@ -1,6 +1,8 @@
 .want {
   width: 100%;
   padding: 0;
+  display: flex;
+  align-items: center;
   // padding: 60px 0;
   &:after {
     content: "";
@@ -8,8 +10,7 @@
     clear: both;
   }
   .ps {
-    float: left;
-    clear: both;
+    // clear: both;
     text-align: right;
     width: 33%;
     // padding: 56px 0 0 0;
@@ -67,6 +68,19 @@
       //   height: 8px;
       //   background: #3f3f3f;
       // }
+    }
+  }
+  .block {
+    width: 9.4%;
+    margin: 0 0 0 0;
+    height: 100%;
+    background-color: #3f3f3f;
+    align-self: flex-start;
+    // border-radius: 0 0 0 100%;
+    &:before{
+    	content: "";
+    	display: block;
+    	padding-top: 4px; 	/* initial ratio of 1:1*/
     }
   }
 }

@@ -1,4 +1,4 @@
-mixin work(href="work.html", src="https://blind.com/wp-content/uploads/cache/2016/06/Xbox_EDM_Console_001/491271275.jpg")
+mixin work(href="work/work-fosun.html", src="https://blind.com/wp-content/uploads/cache/2016/06/Xbox_EDM_Console_001/491271275.jpg")
   .pic
     a(href=`${href}` style=`background-image:url(${src})`)
       .title <span>类型</span><br>标题
@@ -13,5 +13,5 @@ mixin work(href="work.html", src="https://blind.com/wp-content/uploads/cache/201
 .collection
   +work("/")
   +work()
-  +work()
+  +work("work/work-yaspace.html","/assets/img/work/yaspace-cover.jpg")
   +work()
