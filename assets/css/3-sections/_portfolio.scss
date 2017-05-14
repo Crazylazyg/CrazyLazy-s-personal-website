@@ -49,6 +49,7 @@ body {
       // background-image: url('/assets/img/posts/thumbnail/Unknown-12.jpeg');
       background-size: 100%;
       background-position: center;
+      background-repeat: no-repeat;
       transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
       color: white;
       display: flex;/* align horizontal */

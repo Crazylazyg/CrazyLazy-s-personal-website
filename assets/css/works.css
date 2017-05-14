@@ -411,8 +411,8 @@ template {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("/asstes/fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("/asstes/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("/asstes/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("/asstes/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("/asstes/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("/asstes/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  src: url("~/../asstes/fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("~/../asstes/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("~/../asstes/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("~/../asstes/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("~/../asstes/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("~/../asstes/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -2877,6 +2877,7 @@ nav {
   height: 120px;
   background: #FFFFFF;
   box-shadow: 0 4px 64px 0 rgba(0, 12, 24, 0.09);
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: justify;
@@ -2902,12 +2903,14 @@ nav {
       margin-left: 20px;
       margin-top: 20px; }
   nav ul {
-    -ms-flex-align: end;
-        align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     -ms-flex-item-align: end;
         align-self: flex-end;
-    -ms-flex-positive: 1;
-        flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     list-style: none;
     margin: 32px 0;
     font-weight: 500; }
@@ -2949,8 +2952,9 @@ body {
     color: #D8DDE6;
     list-style: none;
     text-align: center;
-    -ms-flex-positive: 1;
-        flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     font-size: 32px;
     padding: 80px 72px 32px 72px;
     cursor: pointer;
@@ -2969,6 +2973,7 @@ body {
 
 .collection {
   width: 100%;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: wrap;
@@ -2976,6 +2981,7 @@ body {
   .collection .pic {
     width: 50%;
     padding: 0;
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     overflow: hidden; }
@@ -2983,13 +2989,16 @@ body {
       width: 100%;
       background-size: 100%;
       background-position: center;
+      background-repeat: no-repeat;
       transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
       color: white;
+      display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       /* align horizontal */
-      -ms-flex-align: center;
-          align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       background-color: rgba(0, 12, 24, 0.2); }
       .collection .pic a:hover {
         background-size: 110%; }
@@ -3002,16 +3011,21 @@ body {
         padding: 0 0 56.25% 0;
         background-color: rgba(0, 12, 24, 0.2); }
       .collection .pic a .title {
+        display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-align: center;
-            align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         -ms-flex-item-align: center;
             align-self: center;
-        -ms-flex-direction: column;
-            flex-direction: column;
-        -ms-flex-pack: center;
-            justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         opacity: 0;
         width: 100%;
         height: 28.12vw;
@@ -3034,14 +3048,19 @@ body {
   background-size: cover;
   color: white;
   text-align: left;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: left;
-      align-items: left;
-  -ms-flex-pack: end;
-      justify-content: flex-end; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
   .banner .h1 {
     /* 我喜欢简单 因为这样 每一件小事都惊天动: */
     font-family: PingFangSC-Medium;
@@ -3105,16 +3124,21 @@ body {
           opacity: 0; }
       .warp-out .warp-inner .believe .paper {
         float: left;
+        display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-align: center;
-            align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         -ms-flex-item-align: center;
             align-self: center;
-        -ms-flex-direction: column;
-            flex-direction: column;
-        -ms-flex-pack: center;
-            justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         width: 64%; }
         .warp-out .warp-inner .believe .paper .next {
           width: 68%;
@@ -3139,10 +3163,12 @@ body {
 .want {
   width: 100%;
   padding: 0;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .want:after {
     content: "";
     display: block;
@@ -3158,12 +3184,16 @@ body {
       .want .ps .p:hover {
         color: #666; }
   .want .titles {
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-direction: column;
-        flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 57.6%;
     margin: 80px 0 120px 0; }
     .want .titles .title {
@@ -3208,10 +3238,12 @@ body {
     z-index: -1;
     width: 100%;
     height: 66vh;
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-        align-items: center; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .work .hero .video {
       z-index: -1;
       height: 100%;
@@ -3228,6 +3260,7 @@ body {
     clear: both; }
   .work .pics {
     width: 100%;
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -3242,12 +3275,14 @@ body {
         padding: 0 0 56.25% 0; }
   .work .explain {
     width: 100%;
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
     .work .explain .left_place {
       width: 50%; }
     .work .explain .right_place {
       width: 50%;
+      display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       padding: 60px 0 80px 0; }
@@ -3276,14 +3311,16 @@ footer .container {
   width: 100%;
   height: 200px;
   background: #191919;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: wrap;
       flex-flow: wrap; }
   footer .container .icon {
     margin: 44px 0 0 36px;
-    -ms-flex-positive: 1;
-        flex-grow: 1; }
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
     footer .container .icon ul {
       text-align: left;
       margin: 0;
@@ -3306,16 +3343,18 @@ footer .container {
     width: 100%;
     -ms-flex-item-align: end;
         align-self: flex-end;
-    -ms-flex-positive: 1;
-        flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     text-align: left;
     padding: 0 0 32px 36px;
     margin: 0; }
   footer .container ul {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    -ms-flex-positive: 1;
-        flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     list-style: none;
     text-align: right;
     margin: 44px 20px 0 0;

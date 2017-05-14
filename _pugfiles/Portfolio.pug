@@ -1,7 +1,7 @@
-mixin work(href="work/work-fosun.html", src="https://blind.com/wp-content/uploads/cache/2016/06/Xbox_EDM_Console_001/491271275.jpg")
-  .pic
+mixin work(classname="",href="/", src="https://blind.com/wp-content/uploads/cache/2016/06/Xbox_EDM_Console_001/491271275.jpg",type="类型",title="标题")
+  .pic(class=`${classname}`)
     a(href=`${href}` style=`background-image:url(${src})`)
-      .title <span>类型</span><br>标题
+      .title <span>#{type}</span><br>#{title}
       
 
 .menus
@@ -11,7 +11,6 @@ mixin work(href="work/work-fosun.html", src="https://blind.com/wp-content/upload
     li UX
     li Producet
 .collection
-  +work("/")
-  +work()
-  +work("work/work-yaspace.html","/assets/img/work/yaspace-cover.jpg")
-  +work()
+  +work("brand","work/work-fosun.html","","品牌","复兴")
+  +work("brand","work/work-yaspace.html","/assets/img/work/yaspace-cover.jpg","品牌","丫空间")
+  +work("producet","work/work-changer.html","/assets/img/work/changer-cover.png","产品","Angle充电器")
