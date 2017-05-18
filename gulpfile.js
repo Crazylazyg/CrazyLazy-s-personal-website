@@ -4,6 +4,7 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var pug          = require('gulp-pug');
+// var fontAwesome = require('node-font-awesome');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -38,6 +39,12 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     });
 });
 
+//fontawesome
+
+// gulp.task('fonts', function() {
+//   gulp.src(fontAwesome.fonts)
+//     .pipe(gulp.dest('./assets/fonts'));
+// });
 /**
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
@@ -52,6 +59,8 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 //         .pipe(browserSync.reload({stream:true}))
 //         .pipe(gulp.dest('assets/css'));
 // });
+
+
 gulp.task('sass', function () {
     return gulp.src('assets/css/works.scss')
         .pipe(sass({
@@ -84,5 +93,6 @@ gulp.task('watch', function () {
 /**
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
+ and server fontAwesome - crazylazy
  */
 gulp.task('default', ['browser-sync', 'watch']);

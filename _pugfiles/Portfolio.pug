@@ -3,7 +3,6 @@ mixin work(classname="",href="/", src="https://blind.com/wp-content/uploads/cach
     a(href=`${href}` style=`background-image:url(${src})`)
       .title <span>#{type}</span><br>#{title}
       
-
 .menus
   ul
     li.active All
@@ -11,6 +10,8 @@ mixin work(classname="",href="/", src="https://blind.com/wp-content/uploads/cach
     li UX
     li Producet
 .collection
-  +work("brand","work/work-fosun.html","","品牌","复兴")
+  +work("brand","work/work-fosun.html","/assets/img/work/fosun-cover.jpg","品牌","复兴")
   +work("brand","work/work-yaspace.html","/assets/img/work/yaspace-cover.jpg","品牌","丫空间")
   +work("producet","work/work-changer.html","/assets/img/work/changer-cover.png","产品","Angle充电器")
+  +work("producet","work/work-led.html","/assets/img/work/led-cover.png","产品","LED仿古灯具")
+  +work("","work/work-yzsg.html","/assets/img/work/yzsg-cover.png","视觉传达","作业DM")
