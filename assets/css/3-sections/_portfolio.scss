@@ -44,17 +44,32 @@ body {
     padding: 0;
     display: flex;
     overflow: hidden;
+    background-color: white;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+    // transform: rotateX(90deg);
+    margin-top: 80px;
+    transform-origin: top;
+    &:nth-child(3n) {
+      margin-top: 120px;
+    }
+    &.lazyIn {
+      opacity: 1;
+      margin-top: 0;
+      // animation: lazy 0.8s ease 1;
+      // transform: rotateX(0);
+    }
     a {
       width: 100%;
       // background-image: url('/assets/img/posts/thumbnail/Unknown-12.jpeg');
       background-size: 101%;
       background-position: center;
       background-repeat: no-repeat;
-      transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      transition: all 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
       color: white;
       display: flex;/* align horizontal */
       align-items: center;
-      background-color: rgba(0,12,24,0.2);
+      // background-color: rgba(0,12,24,0.2);
       &:hover {
         background-size: 110%;
       }
@@ -102,9 +117,17 @@ body {
         // }
       }
 
-
-
-
     }
+  }
+}
+@keyframes lazy {
+  0%{
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }

@@ -86,7 +86,7 @@ gulp.task('watch', function () {
     gulp.watch('assets/css/*.scss', ['sass']);
     gulp.watch('assets/css/**/*.scss', ['sass']);
     gulp.watch('_pugfiles/*.pug', ['pug']);
-    gulp.watch(['*.html', 'work/*.html','_layouts/*.html', '_includes/*','_posts/*','assets/js/*'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', 'work/*.html','_layouts/*.html', '_includes/*','_posts/*','assets/js/*.js'], ['jekyll-rebuild']);
 
 });
 

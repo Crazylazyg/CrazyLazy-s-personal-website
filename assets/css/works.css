@@ -2883,7 +2883,7 @@ nav {
   -ms-flex-line-pack: justify;
       align-content: space-between;
   transition: all 0.8s;
-  z-index: 10; }
+  z-index: 100; }
   nav #logo {
     -ms-flex-item-align: end;
         align-self: flex-end;
@@ -2984,13 +2984,24 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    overflow: hidden; }
+    overflow: hidden;
+    background-color: white;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+    margin-top: 80px;
+    -webkit-transform-origin: top;
+            transform-origin: top; }
+    .collection .pic:nth-child(3n) {
+      margin-top: 120px; }
+    .collection .pic.lazyIn {
+      opacity: 1;
+      margin-top: 0; }
     .collection .pic a {
       width: 100%;
       background-size: 101%;
       background-position: center;
       background-repeat: no-repeat;
-      transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      transition: all 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
       color: white;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2998,8 +3009,7 @@ body {
       /* align horizontal */
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center;
-      background-color: rgba(0, 12, 24, 0.2); }
+              align-items: center; }
       .collection .pic a:hover {
         background-size: 110%; }
       .collection .pic a:hover .title {
@@ -3038,6 +3048,22 @@ body {
         background-color: rgba(0, 6, 12, 0.4); }
         .collection .pic a .title span {
           font-size: 18px; }
+
+@-webkit-keyframes lazy {
+  0% {
+    opacity: 0; }
+  66% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes lazy {
+  0% {
+    opacity: 0; }
+  66% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
 
 .banner {
   width: 100%;
@@ -3241,19 +3267,28 @@ body {
   .work .hero {
     z-index: -1;
     width: 100%;
-    height: 66vh;
+    height: 78vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    transition: all 0.8s; }
+    .work .hero:hover .video {
+      z-index: 1; }
+    .work .hero .video-loop {
+      z-index: -1;
+      height: 100%;
+      margin: auto; }
+      .work .hero .video-loop video {
+        height: 100%;
+        margin: auto; }
     .work .hero .video {
       z-index: -1;
       height: 100%;
       margin: auto; }
       .work .hero .video video {
-        z-index: 1;
         height: 100%;
         margin: auto; }
   .work .main-text {
@@ -3269,10 +3304,22 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+    .work .pics video {
+      width: 50%; }
     .work .pics .pic {
       width: 50%;
       background-size: cover;
-      background-position: center; }
+      background-position: center;
+      opacity: 0;
+      -webkit-animation: lazy 0.8s ease 1;
+              animation: lazy 0.8s ease 1;
+      transition: all 0.66s cubic-bezier(0.215, 0.61, 0.355, 1);
+      margin-top: 80px; }
+      .work .pics .pic:nth-child(3n) {
+        margin-top: 120px; }
+      .work .pics .pic.lazyIn {
+        opacity: 1;
+        margin-top: 0; }
       .work .pics .pic:before {
         content: "";
         display: block;
