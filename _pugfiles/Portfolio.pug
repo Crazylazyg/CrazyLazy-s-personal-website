@@ -2,7 +2,7 @@ mixin work(classname="",href="/", src="https://blind.com/wp-content/uploads/cach
   .pic(class=`${classname}`)
     a(href=`${href}` data-src=`${src}` style=`background-image:url(${src})`)
       .title <span>#{type}</span><br>#{title}
-      
+  
 .menus
   ul
     li.active All
@@ -10,9 +10,11 @@ mixin work(classname="",href="/", src="https://blind.com/wp-content/uploads/cach
     li UX
     li Producet
 .collection
+  +work("UX lazyIn","work/work-zjt.html","/assets/img/work/zjt-cover.png","交互","中建投标品")
+  +work("UX lazyIn","work/work-Tianfu.html","/assets/img/work/Tianfu-cover.png","交互","天府集团")
+  +work("UX lazyIn","work/work-efund.html","/assets/img/work/efund-cover02.png","交互","易方达首页")
   +work("Brand lazyIn","work/work-fosun.html","/assets/img/work/fosun-cover.jpg","品牌","复兴")
-  +work("UX lazyIn","work/work-zjt.html","/assets/img/work/fosun-cover.jpg","交互","中建投标品")
-  +work("Brand lazyIn","work/work-yaspace.html","/assets/img/work/yaspace-cover.jpg","品牌","丫空间")
+  +work("Brand","work/work-yaspace.html","/assets/img/work/yaspace-cover.jpg","品牌","丫空间")
   +work("Producet","work/work-changer.html","/assets/img/work/changer-cover.png","产品","Angle充电器")
   +work("Producet","work/work-led.html","/assets/img/work/led-cover.png","产品","LED仿古灯具")
   +work("","work/work-yzsg.html","/assets/img/work/yzsg-cover.jpeg","视觉传达","作业DM")
