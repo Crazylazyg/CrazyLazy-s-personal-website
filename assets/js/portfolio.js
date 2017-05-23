@@ -17,13 +17,16 @@ $(function(){
     if (className == 'All') {
       $('.pic').css({
         "width": "50%",
+        "opacity": "1",
       });
     }else{
       $('.pic').css({
         "width": "0",
+        "opacity": "0",
       });
       $("." + className).css({
         "width": "50%",
+        "opacity": "1",
       });
     }
   }
