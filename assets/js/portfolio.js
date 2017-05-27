@@ -1,4 +1,7 @@
 $(function(){
+  $(function() {
+        $('.pics').lazy();
+    });
   function starImg() {
     var wScoll = $(window).scrollTop();
     $('.pic').each(function(){

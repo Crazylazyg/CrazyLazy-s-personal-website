@@ -2,13 +2,30 @@
   overflow-x: auto;
   overflow-y: hidden;
   .warp-inner{
-    width: 270%;
+    width: 300%;
     height: 100%;
     .believe {
       display: block;
       float: left;
       width: 33.3333%;
       height: 100%;
+      .block {
+        display: block;
+        margin: 0 0 0 46px;
+        height: 1px;
+        float: left;
+        // background-color: #3f3f3f;
+        // background-image: url('/assets/img/mBG.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        // align-self: flex-start;
+        // border-radius: 0 0 0 100%;
+        // &:before{
+        // 	content: "";
+        // 	display: block;
+        // 	margin: 0 0 0 44px; 	/* initial ratio of 1:1*/
+        // }
+      }
       .pic {
         display: block;
         float: left;
@@ -34,7 +51,7 @@
         align-self: center;
         flex-direction: column;
         justify-content: center;
-        width: 64%;
+        width: 56%;
         .next {
           width: 68%;
           text-align: left;
