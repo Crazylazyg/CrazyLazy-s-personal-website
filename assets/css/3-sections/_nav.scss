@@ -1,6 +1,7 @@
 nav {
+  max-width: 1440px;
   color: #C0C4CC;
-  width: 100%;
+  width: 101%;
   height: 120px;
   background: #FFFFFF;
   // -webkit-appearance: none;
@@ -67,6 +68,38 @@ nav {
     }
     &:first-child {
       padding-left: 24px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  nav {
+    width: 100%;
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-self: center;
+      font-size: 18px;
+      padding: 0 44px;
+      margin: 0;
+      li {
+        width: 66px;
+        display: block;
+        padding: 2px 0;
+      }
+    }
+    p {
+      display: none;
+    }
+  }
+}
+@media (max-width: 520px) {
+  nav {
+    ul {
+      li {
+        display: block;
+      }
     }
   }
 }

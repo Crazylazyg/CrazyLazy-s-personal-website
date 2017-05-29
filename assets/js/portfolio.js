@@ -18,23 +18,17 @@ $(function(){
     });
     $(t).addClass('active');
     if (className == 'All') {
-      $('.pic').css({
-        "width": "50%",
-        "opacity": "1",
-      });
+      $('.pic').removeClass('pic-hidden');
     }else{
-      $('.pic').css({
-        "width": "0",
-        "opacity": "0",
-      });
-      $("." + className).css({
-        "width": "50%",
-        "opacity": "1",
-      });
+      $('.pic').addClass('pic-hidden');
+      $("." + className).each(function(i,e){
+        if (i < 2) {
+          $(this).addClass('lazyIn');
+        }
+        $(this).removeClass('pic-hidden');
+      })
     }
   }
-
-
 
   $('.portfolio').addClass('active');
   $('.pic').lazy({

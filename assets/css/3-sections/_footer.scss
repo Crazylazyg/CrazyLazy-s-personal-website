@@ -6,7 +6,6 @@ footer .container {
   flex-flow: wrap;
   .icon {
     margin: 44px 0 0 36px;
-    flex-grow: 1;
     ul {
       text-align: left;
       margin: 0;
@@ -34,7 +33,6 @@ footer .container {
   p {
     width: 100%;
     align-self: flex-end;
-    flex-grow: 1;
     text-align: left;
     padding: 0 0 32px 36px;
     margin: 0;
@@ -51,6 +49,37 @@ footer .container {
       display: inline-block;
       a {
         color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px)
+  and (max-width: 800px)
+  and (-webkit-min-device-pixel-ratio: 2){
+  footer {
+    .container {
+      height: 120px;
+      padding: 12px 0 0 0;
+      align-content: center;
+      .icon {
+        align-self: center;
+        margin: auto;
+        ul{
+          li {
+            &:last-child {
+              padding-right: 0;
+            }
+          }
+        }
+      }
+      ul.nav {
+        display: none;
+      }
+      p {
+        text-align: center;
+        justify-content: flex-end;
+        padding: 32px 0 0 0;
       }
     }
   }
