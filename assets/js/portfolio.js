@@ -32,11 +32,8 @@ $(function(){
 
   $('.portfolio').addClass('active');
   $('.pic').lazy({
-    delay: 100,
-    effect: 'fadeIn',
-    effectTime: 800,
+    delay: 0,
     threshold: 0,
-    visibleOnly: true,
     onError: function(element) {
         console.log('error loading ' + element.data('src'));
     }

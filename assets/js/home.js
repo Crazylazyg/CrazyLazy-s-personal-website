@@ -23,8 +23,8 @@ $(function(){
   }
   function starMovein() {
     var wScoll = $(window).scrollTop();
-    $('.pic1').each(function(){
-      if ($(this).offset().top - $(window).height()/3 < wScoll) {
+    $('.pic').each(function(){
+      if ($(this).offset().top - $(window).height()/5*3 < wScoll) {
         $(this).addClass('movein');
       }
     });
