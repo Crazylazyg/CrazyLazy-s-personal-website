@@ -2850,7 +2850,8 @@ fieldset {
   padding: 0.6em 0;
   line-height: 1.6;
   background-color: #111;
-  transition: 0.3s all ease-in-out; }
+  -webkit-transition: 0.3s all ease-in-out;
+          transition: 0.3s all ease-in-out; }
   .home-cta:hover {
     background-color: #666;
     box-shadow: 1px 6px 18px -6px rgba(0, 0, 0, 0.4); }
@@ -2883,7 +2884,8 @@ nav {
   display: flex;
   -ms-flex-line-pack: justify;
       align-content: space-between;
-  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+          transition: all 0.8s;
   z-index: 100; }
   nav #logo {
     -ms-flex-item-align: end;
@@ -2991,7 +2993,8 @@ body {
     font-size: 32px;
     padding: 80px 72px 32px 72px;
     cursor: pointer;
-    transition: all 0.3s; }
+    -webkit-transition: all 0.3s;
+            transition: all 0.3s; }
     .menus li.active, .menus li:hover {
       color: #3f3f3f; }
     .menus li.active:after, .menus li:hover:after {
@@ -3002,7 +3005,8 @@ body {
       height: 4px;
       width: 0;
       background-color: #D8DDE6;
-      transition: all .3s; }
+      -webkit-transition: all .3s;
+              transition: all .3s; }
 
 .collection {
   width: 100%;
@@ -3020,7 +3024,8 @@ body {
     overflow: hidden;
     background-color: white;
     opacity: 0;
-    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+            transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
     margin-top: 80px;
     -webkit-transform-origin: top;
             transform-origin: top; }
@@ -3037,7 +3042,8 @@ body {
       background-size: 101%;
       background-position: center;
       background-repeat: no-repeat;
-      transition: all 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      -webkit-transition: all 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+              transition: all 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
       color: white;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3074,7 +3080,8 @@ body {
                 justify-content: center;
         opacity: 0;
         width: 100%;
-        transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        -webkit-transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+                transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
         font-size: 32px;
         text-align: center;
         line-height: 66%;
@@ -3221,7 +3228,8 @@ body {
     height: 100%;
     background-repeat: no-repeat;
     background-size: contain;
-    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1); }
+    -webkit-transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+            transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1); }
     .believe .pic.pic1 {
       background-position: 200% center;
       background-size: auto 100%; }
@@ -3243,7 +3251,8 @@ body {
       background-size: cover;
       border-radius: 8px;
       box-shadow: 0 2px 24px 0 rgba(0, 12, 24, 0);
-      transition: all 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transition: all 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+              transition: all 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
       opacity: 0.6; }
     .believe .pic.movein .pic3 {
       width: 96%;
@@ -3440,7 +3449,8 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    transition: all 0.8s; }
+    -webkit-transition: all 0.8s;
+            transition: all 0.8s; }
     .work .hero:hover .video {
       z-index: 1; }
     .work .hero .video-loop {
@@ -3482,7 +3492,8 @@ body {
       opacity: 0;
       -webkit-animation: lazy 0.8s ease 1;
               animation: lazy 0.8s ease 1;
-      transition: all 0.66s cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transition: all 0.66s cubic-bezier(0.215, 0.61, 0.355, 1);
+              transition: all 0.66s cubic-bezier(0.215, 0.61, 0.355, 1);
       margin-top: 80px; }
       .work .pics .pic:nth-child(3n) {
         margin-top: 120px; }
