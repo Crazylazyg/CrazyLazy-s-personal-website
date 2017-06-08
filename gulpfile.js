@@ -60,6 +60,12 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 //         .pipe(gulp.dest('assets/css'));
 // });
 
+// Crazylazy trying
+gulp.task('pug', function(){
+	return gulp.src('_pugfiles/*.pug')
+	.pipe(pug())
+  .pipe(gulp.dest('_includes'));
+});
 
 gulp.task('sass', function () {
     return gulp.src('assets/css/works.scss')
@@ -72,12 +78,7 @@ gulp.task('sass', function () {
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('assets/css'));
 });
-// Crazylazy trying
-gulp.task('pug', function(){
-	return gulp.src('_pugfiles/*.pug')
-	.pipe(pug())
-	.pipe(gulp.dest('_includes'));
-});
+
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync

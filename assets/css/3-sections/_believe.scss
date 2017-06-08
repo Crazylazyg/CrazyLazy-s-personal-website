@@ -79,8 +79,8 @@
     .title {
       width: 68%;
       padding: 0 0 4% 0;
-      font-size: 2.8em;
-      font-weight: 400;
+      font-size: 3.2vw;
+      font-weight: 600;
       line-height: 1.5;
       &.title-right {
         width: 48%;
@@ -100,12 +100,10 @@
     .p {
       width: 58%;
       padding: 0 10% 0 0;
-      font-size: 12px;
-      font-weight: 300;
+      font-size: 1.2vw;
+      font-weight: 100;
+      color: #aaa;
       margin: 12px 0 0 0;
-      i {
-        color: #999;
-      }
     }
   }
 }
@@ -142,7 +140,7 @@
       height: calc(100vh - 120px);
       .title {
         width: 76%;
-        font-size: 24px;
+        font-size: 7.8vw;
         &.title-right {
           width: 76%;
         }
@@ -151,6 +149,7 @@
         width:76%;
         padding: 0;
         margin: 0;
+        font-size: 4vw;
       }
     }
     .next {

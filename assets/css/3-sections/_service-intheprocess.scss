@@ -1,0 +1,199 @@
+.inprocess {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 120px);
+  $square-width: 28vw;
+  .wrap {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .motion {
+      // height: $square-width;
+      // width: $square-width;
+      animation: breathe 2s infinite alternate;
+      .toptext {
+        position: absolute;
+        color: #fff;
+        z-index: 10;
+        font-size: $square-width/10;
+        font-weight: 600;
+        // letter-spacing: 0.6vw;
+        line-height: 1.24em;
+        margin: $square-width/7*2 0 0 $square-width/4;
+        span {
+          font-weight: 100;
+          letter-spacing: 0.1vw;
+        }
+      }
+      .square {
+        &.s1{
+          position: relative;
+          animation: rotation 19s linear infinite;
+        }
+        .s2 {
+          width: $square-width*0.96;
+          height: $square-width*0.96;
+          transform: rotate(-24deg);
+          animation: rotation2 18s linear infinite;
+        }
+        .s3 {
+          width: $square-width*0.96;
+          height: $square-width*0.96;
+          transform: rotate(12deg);
+          animation: rotation3 17s linear infinite;
+        }
+        position: absolute;
+        width: $square-width;
+        height: $square-width;
+        border-radius: $square-width*0.4;
+        background-color: rgba(0,0,0,0.48);
+        box-shadow: 0 0 28px 0 rgba(0,0,0,0.2);
+      }
+    }
+  }
+  .text-wrap {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .text {
+      width: 68%;
+      font-size: 1.2vw;
+      color: #bbb;
+      text-align: justify;
+      span {
+        font-size: 2.4vw;
+        font-weight: 600;
+        color: #333;
+      }
+    }
+    .form {
+      width: 68%;
+      margin: 4% 0 0 0;
+      .myForm {
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        input {
+          display: block;
+          width: 100%;
+          border: none;
+          background: none;
+          box-shadow: none;
+          padding: 3% 0 3% 3%;
+        }
+        .mc-field-group {
+          flex: 5;
+          input {
+            border: 1px solid #eee;
+          }
+        }
+        .submit_button {
+          flex: 2;
+          display: flex;
+          align-items: stretch;
+          input {
+            color: #fff;
+            background-color: #333;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  // 50% {
+  //   transform: rotate(180deg) scale(1.2,1.2);
+  // }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation2 {
+  0% {
+    transform: rotate(-24deg) translate(0,0);
+  }
+  50% {
+    transform: translate(1%,1%);
+  }
+  100% {
+    transform: rotate(-384deg) translate(0,0);
+  }
+}
+
+@keyframes rotation3 {
+  0% {
+    transform: rotate(12deg) translate(0,0);
+  }
+  50% {
+    transform: translate(-1%,-1%);
+  }
+  100% {
+    transform: rotate(-348deg) translate(0,0);
+  }
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+
+@media (max-width: 800px) {
+  .inprocess {
+    height: 100vh;
+    flex-direction: column;
+    $square-mobile-width: 48vw;
+    .wrap {
+      .motion {
+        .toptext {
+          font-size: $square-mobile-width/10;
+          margin: $square-mobile-width/7*2 0 0 $square-mobile-width/4;
+        }
+        .square {
+          .s2 {
+            width: $square-mobile-width*0.96;
+            height: $square-mobile-width*0.96;
+          }
+          .s3 {
+            width: $square-mobile-width*0.96;
+            height: $square-mobile-width*0.96;
+          }
+          width: $square-mobile-width;
+          height: $square-mobile-width;
+          border-radius: $square-mobile-width*0.38;
+        }
+      }
+    }
+    .text-wrap {
+      .text {
+        width: 76%;
+        text-align: center;
+        font-size: 4.4vw;
+        span {
+          font-size: 9vw;
+        }
+      }
+      .form {
+        width:76%;
+        .myForm {
+          input {
+            padding: 6% 0 6% 6%;
+          }
+        }
+      }
+    }
+  }
+}

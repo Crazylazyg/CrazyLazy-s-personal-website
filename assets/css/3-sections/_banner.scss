@@ -15,7 +15,7 @@
   .h1 {
     /* 我喜欢简单 因为这样 每一件小事都惊天动: */
     font-family: PingFangSC-Medium;
-    font-size: 4.25em;
+    font-size: 5vw;
     line-height: 56%;
     color: #FFFFFF;
     line-height: 140%;
@@ -37,7 +37,7 @@
     border-radius: 3px;
     margin: 0 0 48px 44px;
     font-family: PingFangSC-Regular;
-    font-size: 24px;
+    font-size: 1.72vw;
     color: #FFFFFF;
     line-height: 36px;
     width: 80%;
@@ -96,14 +96,14 @@
 @media (max-width:640px) {
   .banner {
     .h1 {
-      font-size: 24px;
+      font-size: 8vw;
       margin-left: 12%;
     }
     .span {
       margin-left: 12%;
     }
     .p {
-      font-size: 16px;
+      font-size: 4.4vw;
       line-height: 1.6;
       margin-left: 12%;
     }
