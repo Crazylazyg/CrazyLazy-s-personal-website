@@ -18,12 +18,12 @@
         color: #fff;
         z-index: 10;
         font-size: $square-width/10;
-        font-weight: 600;
+        font-weight: 800;
         // letter-spacing: 0.6vw;
         line-height: 1.24em;
         margin: $square-width/7*2 0 0 $square-width/4;
         span {
-          font-weight: 100;
+          font-weight: 400;
           letter-spacing: 0.1vw;
         }
       }
@@ -31,10 +31,12 @@
         &.s1{
           position: relative;
           animation: rotation 19s linear infinite;
+          background-color: rgba(0,0,0,0.28);
+          box-shadow: 0 0 28px 0 rgba(0,0,0,0.28);
         }
         .s2 {
-          width: $square-width*0.96;
-          height: $square-width*0.96;
+          width: $square-width*0.94;
+          height: $square-width*0.94;
           transform: rotate(-24deg);
           animation: rotation2 18s linear infinite;
         }
@@ -48,7 +50,7 @@
         width: $square-width;
         height: $square-width;
         border-radius: $square-width*0.4;
-        background-color: rgba(0,0,0,0.48);
+        background-color: rgba(0,0,0,0.44);
         box-shadow: 0 0 28px 0 rgba(0,0,0,0.2);
       }
     }

@@ -3160,26 +3160,28 @@ body {
         color: #fff;
         z-index: 10;
         font-size: 2.8vw;
-        font-weight: 600;
+        font-weight: 800;
         line-height: 1.24em;
         margin: 8vw 0 0 7vw; }
         .inprocess .wrap .motion .toptext span {
-          font-weight: 100;
+          font-weight: 400;
           letter-spacing: 0.1vw; }
       .inprocess .wrap .motion .square {
         position: absolute;
         width: 28vw;
         height: 28vw;
         border-radius: 11.2vw;
-        background-color: rgba(0, 0, 0, 0.48);
+        background-color: rgba(0, 0, 0, 0.44);
         box-shadow: 0 0 28px 0 rgba(0, 0, 0, 0.2); }
         .inprocess .wrap .motion .square.s1 {
           position: relative;
           -webkit-animation: rotation 19s linear infinite;
-                  animation: rotation 19s linear infinite; }
+                  animation: rotation 19s linear infinite;
+          background-color: rgba(0, 0, 0, 0.28);
+          box-shadow: 0 0 28px 0 rgba(0, 0, 0, 0.28); }
         .inprocess .wrap .motion .square .s2 {
-          width: 26.88vw;
-          height: 26.88vw;
+          width: 26.32vw;
+          height: 26.32vw;
           -webkit-transform: rotate(-24deg);
                   transform: rotate(-24deg);
           -webkit-animation: rotation2 18s linear infinite;
