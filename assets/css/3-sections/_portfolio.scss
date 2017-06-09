@@ -51,7 +51,7 @@ body {
     margin-top: 80px;
     transform-origin: top;
     &.pic-hidden {
-      width: 0%;
+      display: none;
       opacity: 0;
     }
     &:nth-child(3n) {
