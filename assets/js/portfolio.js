@@ -1,7 +1,4 @@
 $(function(){
-  $(function() {
-        $('.pics').lazy();
-    });
   function starImg() {
     var wScoll = $(window).scrollTop();
     $('.pic').each(function(){
@@ -31,13 +28,14 @@ $(function(){
   }
 
   $('.portfolio').addClass('active');
-  $('.pic').lazy({
-    delay: 0,
     threshold: 0,
-    onError: function(element) {
-        console.log('error loading ' + element.data('src'));
-    }
-  });
+  // $('.pic').lazy({
+  //   delay: 0,
+  //   threshold: 0,
+  //   onError: function(element) {
+  //       console.log('error loading ' + element.data('src'));
+  //   }
+  // });
 
   $('.menus li').each(function(){
     $(this).click(function(){
