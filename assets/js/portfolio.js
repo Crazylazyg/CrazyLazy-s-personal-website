@@ -28,7 +28,6 @@ $(function(){
   }
 
   $('.portfolio').addClass('active');
-    threshold: 0,
   // $('.pic').lazy({
   //   delay: 0,
   //   threshold: 0,

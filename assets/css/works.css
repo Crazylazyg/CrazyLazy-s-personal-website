@@ -3158,13 +3158,9 @@ body {
         margin: 9.24vw 0 0 7vw; }
         .inprocess .wrap .motion .toptext span {
           font-weight: 100;
-<<<<<<< Updated upstream
+          color: rgba(255, 255, 255, 0.6);
           letter-spacing: 0.1vw;
           color: #999; }
-=======
-          color: rgba(255, 255, 255, 0.6);
-          letter-spacing: 0.1vw; }
->>>>>>> Stashed changes
       .inprocess .wrap .motion .square {
         position: absolute;
         width: 28vw;
@@ -3175,7 +3171,6 @@ body {
           position: relative;
           -webkit-animation: rotation 19s linear infinite;
                   animation: rotation 19s linear infinite;
-<<<<<<< Updated upstream
           background-color: rgba(40, 0, 0, 0.24);
           box-shadow: 0 0 28px 0 rgba(40, 0, 0, 0.24); }
         .inprocess .wrap .motion .square.s2 {
@@ -3187,17 +3182,6 @@ body {
           -webkit-animation: rotation2 18s linear infinite;
                   animation: rotation2 18s linear infinite; }
         .inprocess .wrap .motion .square.s3 {
-=======
-          background-color: rgba(0, 0, 0, 0.28); }
-        .inprocess .wrap .motion .square .s2 {
-          width: 26.32vw;
-          height: 26.32vw;
-          -webkit-transform: rotate(-24deg);
-                  transform: rotate(-24deg);
-          -webkit-animation: rotation2 15s linear infinite;
-                  animation: rotation2 15s linear infinite; }
-        .inprocess .wrap .motion .square .s3 {
->>>>>>> Stashed changes
           width: 26.88vw;
           height: 26.88vw;
           -webkit-transform: rotate(12deg);
@@ -3490,12 +3474,7 @@ body {
     height: 100%;
     background-repeat: no-repeat;
     background-size: contain;
-<<<<<<< Updated upstream
-    -webkit-transition: all 1.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-            transition: all 1.4s cubic-bezier(0.215, 0.61, 0.355, 1); }
-=======
-    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1); }
->>>>>>> Stashed changes
+    transition: all 1.4s cubic-bezier(0.215, 0.61, 0.355, 1); }
     .believe .pic.pic1 {
       background-position: 200% center;
       background-size: auto 100%; }
@@ -3517,12 +3496,7 @@ body {
       background-size: cover;
       border-radius: 8px;
       box-shadow: 0 2px 24px 0 rgba(0, 12, 24, 0);
-<<<<<<< Updated upstream
-      -webkit-transition: all 2s cubic-bezier(0.215, 0.61, 0.355, 1);
-              transition: all 2s cubic-bezier(0.215, 0.61, 0.355, 1);
-=======
-      transition: all 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
->>>>>>> Stashed changes
+      transition: all 2s cubic-bezier(0.215, 0.61, 0.355, 1);
       opacity: 0.6; }
     .believe .pic.movein .pic3 {
       width: 96%;
