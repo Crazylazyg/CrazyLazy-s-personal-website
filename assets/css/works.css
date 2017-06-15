@@ -2921,12 +2921,17 @@ nav {
       display: inline-block;
       padding: 0 32px; }
       nav ul li a {
+        border-bottom: 4px solid #fff;
+        border-radius: 20%;
+        -webkit-transition: all .29s;
+                transition: all .29s;
         color: #C0C4CC; }
         nav ul li a.active {
           color: #3f3f3f; }
         nav ul li a:hover {
           color: #3f3f3f;
-          border-bottom: 4px solid #3f3f3f; }
+          border-bottom: 4px solid #3f3f3f;
+          border-radius: 0; }
   nav p {
     -ms-flex-item-align: end;
         align-self: flex-end;
@@ -3502,10 +3507,10 @@ body {
       background-position: center;
       background-size: cover;
       border-radius: 8px;
-      box-shadow: 0 2px 24px 0 rgba(0, 12, 24, 0);
+      box-shadow: 0 2px 12px 0 rgba(0, 12, 24, 0);
       -webkit-transition: all 2s cubic-bezier(0.215, 0.61, 0.355, 1);
               transition: all 2s cubic-bezier(0.215, 0.61, 0.355, 1);
-      opacity: 0.6; }
+      opacity: 0.3; }
     .believe .pic.movein .pic3 {
       width: 96%;
       padding: 62% 0 0 0;

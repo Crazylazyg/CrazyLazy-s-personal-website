@@ -42,14 +42,18 @@ nav {
       display: inline-block;
       padding: 0 32px;
       a {
+        border-bottom: 4px solid #fff;
+        border-radius: 20%;
+        transition: all .29s;
+        color: #C0C4CC;
         &.active {
           color: #3f3f3f;
           // border-bottom: 4px solid #3f3f3f;
         }
-        color: #C0C4CC;
         &:hover {
           color: #3f3f3f;
           border-bottom: 4px solid #3f3f3f;
+          border-radius: 0;
         }
       }
     }

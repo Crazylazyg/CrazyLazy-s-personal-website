@@ -4,7 +4,6 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var pug          = require('gulp-pug');
-// var fontAwesome = require('node-font-awesome');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -61,11 +60,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 // });
 
 // Crazylazy trying
-gulp.task('pug', function(){
-	return gulp.src('_pugfiles/*.pug')
-	.pipe(pug())
-  .pipe(gulp.dest('_includes'));
-});
+
 
 gulp.task('sass', function () {
     return gulp.src('assets/css/works.scss')
@@ -79,6 +74,12 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('assets/css'));
 });
 
+// Crazylazy trying
+gulp.task('pug', function(){
+	return gulp.src('_pugfiles/*.pug')
+  .pipe(pug())
+	.pipe(gulp.dest('_includes'));
+});
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
@@ -86,8 +87,8 @@ gulp.task('sass', function () {
 gulp.task('watch', function () {
     gulp.watch('assets/css/*.scss', ['sass']);
     gulp.watch('assets/css/**/*.scss', ['sass']);
-    gulp.watch('_pugfiles/*.pug', ['pug']);
     gulp.watch(['*.html', 'work/*.html','_layouts/*.html', '_includes/*','_posts/*','assets/js/*.js'], ['jekyll-rebuild']);
+    gulp.watch('_pugfiles/*.pug', ['pug']);
 
 });
 
