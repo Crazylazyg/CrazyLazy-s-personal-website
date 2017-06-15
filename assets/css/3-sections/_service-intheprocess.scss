@@ -24,6 +24,7 @@
         margin: $square-width/10*3.3 0 0 $square-width/4;
         span {
           font-weight: 100;
+          color:rgba(255,255,255,0.6);
           letter-spacing: 0.1vw;
           color:#999;
         }
@@ -141,13 +142,13 @@
 
 @keyframes rotation3 {
   0% {
-    transform: rotate(12deg) translate(0,0);
+    transform: rotate(12deg) translate(1%,1%);
   }
   50% {
-    transform: translate(-1%,-1%);
+    transform: translate(0,0);
   }
   100% {
-    transform: rotate(-348deg) translate(0,0);
+    transform: rotate(-348deg) translate(1%,1%);
   }
 }
 

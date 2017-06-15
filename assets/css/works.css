@@ -3170,6 +3170,7 @@ body {
         margin: 9.24vw 0 0 7vw; }
         .inprocess .wrap .motion .toptext span {
           font-weight: 100;
+          color: rgba(255, 255, 255, 0.6);
           letter-spacing: 0.1vw;
           color: #999; }
       .inprocess .wrap .motion .square {
@@ -3318,25 +3319,25 @@ body {
 
 @-webkit-keyframes rotation3 {
   0% {
-    -webkit-transform: rotate(12deg) translate(0, 0);
-            transform: rotate(12deg) translate(0, 0); }
+    -webkit-transform: rotate(12deg) translate(1%, 1%);
+            transform: rotate(12deg) translate(1%, 1%); }
   50% {
-    -webkit-transform: translate(-1%, -1%);
-            transform: translate(-1%, -1%); }
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
   100% {
-    -webkit-transform: rotate(-348deg) translate(0, 0);
-            transform: rotate(-348deg) translate(0, 0); } }
+    -webkit-transform: rotate(-348deg) translate(1%, 1%);
+            transform: rotate(-348deg) translate(1%, 1%); } }
 
 @keyframes rotation3 {
   0% {
-    -webkit-transform: rotate(12deg) translate(0, 0);
-            transform: rotate(12deg) translate(0, 0); }
+    -webkit-transform: rotate(12deg) translate(1%, 1%);
+            transform: rotate(12deg) translate(1%, 1%); }
   50% {
-    -webkit-transform: translate(-1%, -1%);
-            transform: translate(-1%, -1%); }
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
   100% {
-    -webkit-transform: rotate(-348deg) translate(0, 0);
-            transform: rotate(-348deg) translate(0, 0); } }
+    -webkit-transform: rotate(-348deg) translate(1%, 1%);
+            transform: rotate(-348deg) translate(1%, 1%); } }
 
 @-webkit-keyframes breathe {
   0% {
