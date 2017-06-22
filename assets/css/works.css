@@ -2850,8 +2850,7 @@ fieldset {
   padding: 0.6em 0;
   line-height: 1.6;
   background-color: #111;
-  -webkit-transition: 0.3s all ease-in-out;
-          transition: 0.3s all ease-in-out; }
+  transition: 0.3s all ease-in-out; }
   .home-cta:hover {
     background-color: #666;
     box-shadow: 1px 6px 18px -6px rgba(0, 0, 0, 0.4); }
@@ -2877,7 +2876,7 @@ nav {
   color: #C0C4CC;
   width: 100%;
   height: 120px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.93);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   box-shadow: 0 4px 64px 0 rgba(0, 12, 24, 0.09);
@@ -2886,8 +2885,7 @@ nav {
   display: flex;
   -ms-flex-line-pack: justify;
       align-content: space-between;
-  -webkit-transition: all 0.8s;
-          transition: all 0.8s;
+  transition: all 0.8s;
   z-index: 100; }
   nav #logo {
     -ms-flex-item-align: end;
@@ -2943,8 +2941,7 @@ nav {
       nav ul li a {
         border-bottom: 4px solid rgba(255, 255, 255, 0);
         border-radius: 20%;
-        -webkit-transition: all .29s;
-                transition: all .29s;
+        transition: all .29s;
         color: #C0C4CC; }
         nav ul li a.active {
           color: #3f3f3f; }
@@ -3018,8 +3015,7 @@ body {
     font-size: 32px;
     padding: 80px 72px 32px 72px;
     cursor: pointer;
-    -webkit-transition: all 0.3s;
-            transition: all 0.3s; }
+    transition: all 0.3s; }
     .menus li.active, .menus li:hover {
       color: #3f3f3f; }
     .menus li.active:after, .menus li:hover:after {
@@ -3030,8 +3026,7 @@ body {
       height: 4px;
       width: 0;
       background-color: #D8DDE6;
-      -webkit-transition: all .3s;
-              transition: all .3s; }
+      transition: all .3s; }
 
 .collection {
   width: 100%;
@@ -3049,8 +3044,7 @@ body {
     overflow: hidden;
     background-color: white;
     opacity: 0;
-    -webkit-transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
-            transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
     margin-top: 80px;
     -webkit-transform-origin: top;
             transform-origin: top; }
@@ -3067,8 +3061,7 @@ body {
       background-size: 101%;
       background-position: center;
       background-repeat: no-repeat;
-      -webkit-transition: all 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-              transition: all 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      transition: all 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
       color: white;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3105,8 +3098,7 @@ body {
                 justify-content: center;
         opacity: 0;
         width: 100%;
-        -webkit-transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-                transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
         font-size: 32px;
         text-align: center;
         line-height: 66%;
@@ -3506,8 +3498,7 @@ body {
     height: 100%;
     background-repeat: no-repeat;
     background-size: contain;
-    -webkit-transition: all 1.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-            transition: all 1.4s cubic-bezier(0.215, 0.61, 0.355, 1); }
+    transition: all 1.4s cubic-bezier(0.215, 0.61, 0.355, 1); }
     .believe .pic.pic1 {
       background-position: 200% center;
       background-size: auto 100%; }
@@ -3529,8 +3520,7 @@ body {
       background-size: cover;
       border-radius: 8px;
       box-shadow: 0 2px 12px 0 rgba(0, 12, 24, 0);
-      -webkit-transition: all 2s cubic-bezier(0.215, 0.61, 0.355, 1);
-              transition: all 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition: all 2s cubic-bezier(0.215, 0.61, 0.355, 1);
       opacity: 0.3; }
     .believe .pic.movein .pic3 {
       width: 96%;
@@ -3729,8 +3719,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-transition: all 0.8s;
-            transition: all 0.8s; }
+    transition: all 0.8s; }
     .work .hero:hover .video {
       z-index: 1; }
     .work .hero .video-loop {
@@ -3772,8 +3761,7 @@ body {
       opacity: 0;
       -webkit-animation: lazy 0.8s ease 1;
               animation: lazy 0.8s ease 1;
-      -webkit-transition: all 0.66s cubic-bezier(0.215, 0.61, 0.355, 1);
-              transition: all 0.66s cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition: all 0.66s cubic-bezier(0.215, 0.61, 0.355, 1);
       margin-top: 80px; }
       .work .pics .pic:nth-child(3n) {
         margin-top: 120px; }

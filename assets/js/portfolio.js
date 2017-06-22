@@ -19,7 +19,7 @@ $(function(){
     }else{
       $('.pic').addClass('pic-hidden');
       $("." + className).each(function(i,e){
-        if (i < 2) {
+        if (i < 1) {
           $(this).addClass('lazyIn');
         }
         $(this).removeClass('pic-hidden');
