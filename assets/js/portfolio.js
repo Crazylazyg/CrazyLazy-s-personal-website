@@ -28,13 +28,8 @@ $(function(){
   }
 
   $('.portfolio').addClass('active');
-  // $('.pic').lazy({
-  //   delay: 0,
-  //   threshold: 0,
-  //   onError: function(element) {
-  //       console.log('error loading ' + element.data('src'));
-  //   }
-  // });
+
+  $('.pics').Lazy();
 
   $('.menus li').each(function(){
     $(this).click(function(){
