@@ -2,7 +2,7 @@ mixin work(classname="",href="/", src="https://blind.com/wp-content/uploads/cach
   .pic(class=`${classname}`)
     a(href=`${href}` data-src=`${src}` class="pics" )
       .title <span>#{type}</span><br>#{title}
-      
+    
 .menus
   ul
     li.active All
@@ -10,10 +10,12 @@ mixin work(classname="",href="/", src="https://blind.com/wp-content/uploads/cach
     li UX
     li Product
 .collection
-  +work("UX lazyIn","work/work-haitong.html","/assets/img/work/haitong-cover.jpg","交互","海通资管")
-  +work("UX lazyIn","work/work-zjt.html","/assets/img/work/zjt-cover1.jpg","交互","中建投标品")
-  +work("UX","work/work-efund.html","/assets/img/work/efund-cover0.jpg","交互","易方达首页")
-  +work("Brand","work/work-fosun.html","/assets/img/work/fosun-mockup.png","品牌","复兴集团")
+  +work("UX lazyIn","work/work-ux.html","/assets/img/work/ux/iPad-Pro_cover.jpg","交互","火车票UX")
+  +work("Brand lazyIn","work/work-fosun.html","/assets/img/work/fosun-mockup.png","品牌","复兴集团")
+  +work("UX lazyIn","work/work-efund.html","/assets/img/work/efund-cover0.jpg","交互","易方达首页")
+  +work("UX","work/work-zjt.html","/assets/img/work/zjt-cover1.jpg","交互","中建投标品")
+  
+  +work("UX ","work/work-haitong.html","/assets/img/work/haitong-cover.jpg","交互","海通资管")
   +work("Brand","work/work-daowei.html","/assets/img/work/atunit-cover.jpeg","品牌","道位showcase")
   +work("UX","work/work-Tianfu.html","/assets/img/work/Tianfu-cover.png","交互","天府集团")
   +work("Brand","work/work-yaspace.html","/assets/img/work/yaspace-DM4.jpg","品牌","丫空间")

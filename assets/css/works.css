@@ -2780,12 +2780,12 @@ hr {
 /* Links
   ------------------------------------	*/
 a {
-  color: #BD5248;
+  color: #3f3f3f;
   text-decoration: none;
   outline: 0; }
 
 a:hover, a:focus {
-  color: #d89993; }
+  color: #727272; }
 
 /* Selection colors (easy to forget)
   ------------------------------------	*/
@@ -2876,7 +2876,7 @@ nav {
   color: #C0C4CC;
   width: 100%;
   height: 120px;
-  background: rgba(255, 255, 255, 0.93);
+  background: rgba(255, 255, 255, 0.9);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   box-shadow: 0 4px 64px 0 rgba(0, 12, 24, 0.09);
@@ -2942,7 +2942,7 @@ nav {
         border-bottom: 4px solid rgba(255, 255, 255, 0);
         border-radius: 20%;
         transition: all .29s;
-        color: #C0C4CC; }
+        color: #909499; }
         nav ul li a.active {
           color: #3f3f3f; }
         nav ul li a:hover {
@@ -3498,6 +3498,7 @@ body {
     height: 100%;
     background-repeat: no-repeat;
     background-size: contain;
+    will-change: transform;
     transition: all 1.4s cubic-bezier(0.215, 0.61, 0.355, 1); }
     .believe .pic.pic1 {
       background-position: 200% center;
@@ -3675,6 +3676,9 @@ body {
       font-size: 16px;
       font-weight: lighter;
       margin: 16px 0 0 0; }
+      .want .titles .title span {
+        font-size: 24px;
+        font-weight: bolder; }
     .want .titles .line {
       display: block;
       border-bottom: 4px solid #3f3f3f;
@@ -3737,9 +3741,9 @@ body {
         height: 100%;
         margin: auto; }
   .work .main-text {
-    width: 66%;
+    width: 44%;
     margin: auto;
-    text-align: center;
+    text-align: left;
     padding: 60px 0 80px 0;
     clear: both; }
   .work .pics {
@@ -3763,6 +3767,11 @@ body {
               animation: lazy 0.8s ease 1;
       transition: all 0.66s cubic-bezier(0.215, 0.61, 0.355, 1);
       margin-top: 80px; }
+      .work .pics .pic.fullimg {
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat; }
       .work .pics .pic:nth-child(3n) {
         margin-top: 120px; }
       .work .pics .pic.lazyIn {

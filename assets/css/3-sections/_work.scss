@@ -39,9 +39,9 @@
     }
   }
   .main-text{
-    width: 66%;
+    width: 44%;
     margin: auto;
-    text-align: center;
+    text-align: left;
     padding: 60px 0 80px 0;
     clear: both;
   }
@@ -63,6 +63,12 @@
       animation: lazy 0.8s ease 1;
       transition: all 0.66s cubic-bezier(0.215, 0.61, 0.355, 1);
       margin-top: 80px;
+      &.fullimg{
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
       &:nth-child(3n) {
         margin-top: 120px;
       }

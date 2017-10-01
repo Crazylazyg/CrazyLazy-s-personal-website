@@ -63,7 +63,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 
 
 gulp.task('sass', function () {
-    return gulp.src('assets/css/works.scss')
+    return gulp.src('assets/css/*.scss')
         .pipe(sass({
             includePaths: ['css'],
             onError: browserSync.notify
@@ -86,6 +86,7 @@ gulp.task('pug', function(){
  */
 gulp.task('watch', function () {
     gulp.watch('assets/css/*.scss', ['sass']);
+    gulp.watch('assets/css/**/*.sass', ['sass']);
     gulp.watch('assets/css/**/*.scss', ['sass']);
     gulp.watch(['*.html', 'work/*.html','_layouts/*.html', '_includes/*','_posts/*','assets/js/*.js'], ['jekyll-rebuild']);
     gulp.watch('_pugfiles/*.pug', ['pug']);
